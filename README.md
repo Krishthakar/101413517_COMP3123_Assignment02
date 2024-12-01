@@ -9,7 +9,7 @@ This is a full-stack web application that allows users to manage an employee lis
 
 ### Add Employee Page
 ![Add Employee](https://github.com/Krishthakar/101413517_COMP3123_Assignment02/blob/main/Screenshots/Reactjs%20app%20operation%20Screen/Screenshot%202024-12-01%20155410.png)
-![Add Employee]()
+![Add Employee](https://github.com/Krishthakar/101413517_COMP3123_Assignment02/blob/main/Screenshots/Reactjs%20app%20operation%20Screen/Screenshot%202024-12-01%20155524.png)
 ### Search Feature
 ![Search Feature](screenshots/search_feature.png)
 
