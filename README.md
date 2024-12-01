@@ -1,4 +1,4 @@
-# Assignment 02: Employee Management System
+# Assignment 02
 
 This is a full-stack web application that allows users to manage an employee list. It includes features to add employees, search for employees, and log out securely. The application is built using **ReactJS** for the frontend and **NodeJS**, **Express**, and **MongoDB** for the backend.
 
