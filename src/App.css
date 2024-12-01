@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* General body styles */
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../public/images2.webp') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: #ffffff; /* Ensures text is readable over the background */
+}
+
+/* Centering containers */
+.container {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black for readability */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+/* Titles and headings */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 25px;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Employee list styles */
+.employee-list {
+  margin: 25px 0;
+}
+
+.employee-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+  color: #000;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.employee-list li div {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button styles for Edit and Delete */
+.edit-button {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-button:hover {
+  background-color: #388e3c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #388e3c;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .employee-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-list li div {
+    margin-top: 12px;
+    justify-content: flex-start;
   }
 }
